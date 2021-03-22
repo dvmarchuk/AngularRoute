@@ -16,11 +16,7 @@ export class FullCarComponent {
               private carService: CarService,
               private router: Router
   ) {
-    /*// this.activatedRoute.params.subscribe(params => {*/
-    /*                                                //   const id = params.id;*/
-    /*                                                //   this.userService.getUser(id).subscribe(value => this.fullUser = value);*/
-    /*                                                //*/
-    /*                                                // });*/
+
 
     this.activatedRoute.params.subscribe(params => {
       this.fullCar = this.router.getCurrentNavigation().extras.state as Car;

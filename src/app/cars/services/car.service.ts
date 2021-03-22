@@ -23,6 +23,4 @@ export class CarService {
   getCar(id): Observable<Car> {
     return this.httpClient.get<Car>(this.url + '/' + id);
   }
-
-
 }
